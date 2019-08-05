@@ -24,7 +24,7 @@ class Song
     @@genres.uniq
   end
 
-  def genre_count
+  def self.genre_count
     new_hash = {}
     @@genres.each do |genre, songs|
       new_hash[genre] = songs.length
